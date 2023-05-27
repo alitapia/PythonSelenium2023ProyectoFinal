@@ -7,7 +7,7 @@
     },
     "search_btn": {
       "by": "XPATH",
-      "value": "//div[@id=\"search\"]//button"
+      "value": "//div[@id=\"search\"]//buttona"
     }
   }
-}
+]
