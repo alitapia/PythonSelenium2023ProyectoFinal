@@ -1,0 +1,5 @@
+[
+  "test_home_page.py::test_search",
+  "test_login_page.py::test_invalid_login",
+  "test_login_page.py::test_valid_login"
+]
