@@ -15,6 +15,7 @@ class HomePage(BasePage):
         self.element("search_input").wait_clickable().send_keys(value)
         self.element("search_btn").wait_clickable().click()
 
+
     def get_top_menu_options(self) -> list[str]:
         logging.info("Get home top menu options")
         self.element("top_menu_options").wait_visible()

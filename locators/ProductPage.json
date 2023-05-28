@@ -1,0 +1,21 @@
+{
+  "url": "https://laboratorio.qaminds.com/index.php?route=product/product&product_id=49&search=galaxy",
+  "locators": {
+    "product_title": {
+      "by": "XPATH",
+      "value": "//h1"
+    },
+    "product_price": {
+      "by": "XPATH",
+      "value": "//li/h2"
+    },
+     "currency_menu": {
+      "by": "XPATH",
+      "value": "//button[@class='btn btn-link dropdown-toggle']"
+    },
+     "dollar_option": {
+      "by": "XPATH",
+      "value": "//button[@name='USD']"
+    }
+  }
+}

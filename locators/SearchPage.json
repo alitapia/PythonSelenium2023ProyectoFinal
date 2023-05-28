@@ -1,0 +1,9 @@
+{
+  "url": "https://laboratorio.qaminds.com/index.php?route=product/search&search=galaxy",
+  "locators": {
+    "product_title": {
+      "by": "XPATH",
+      "value": "//div[@class='caption']//a"
+    }
+  }
+}
