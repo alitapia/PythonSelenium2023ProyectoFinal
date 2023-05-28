@@ -4,6 +4,14 @@
     "product_title": {
       "by": "XPATH",
       "value": "//div[@class='caption']//a"
+    },
+    "add_cart_button": {
+      "by": "XPATH",
+      "value": "//button[contains(@onclick,'cart.add')]"
+    },
+    "checkout_button": {
+      "by": "XPATH",
+      "value": "//a[@title='Checkout']"
     }
   }
 }

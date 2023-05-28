@@ -1,0 +1,13 @@
+{
+  "url": "https://laboratorio.qaminds.com/index.php?route=checkout/cart",
+  "locators": {
+    "get_product_name_checkout":{
+      "by": "XPATH",
+      "value": "//table[@class='table table-bordered']//td[@class='text-left']//a"
+    },
+    "warning_message": {
+      "by": "CLASS_NAME",
+      "value": "alert-danger"
+    }
+  }
+}

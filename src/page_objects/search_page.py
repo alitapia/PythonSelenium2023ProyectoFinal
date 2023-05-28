@@ -16,3 +16,10 @@ class SearchPage(BasePage):
         logging.info(f"Get product name")
         return self.element("product_title").wait_visible()
 
+    def add_to_cart(self):
+        logging.info("Add to cart product")
+        self.element("add_cart_button").wait_clickable().click()
+
+    def go_to_checkout(self):
+        logging.info("Go to checkout from search page")
+        self.element("checkout_button").wait_clickable().click()
