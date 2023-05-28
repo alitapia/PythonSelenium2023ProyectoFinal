@@ -16,6 +16,10 @@
     "warning_message": {
       "by": "CLASS_NAME",
       "value": "alert-danger"
+    },
+    "forgotten_password_login": {
+      "by": "XPATH",
+      "value": "//div[@class=\"form-group\"]//a[contains(@href,\"forgotten\")]"
     }
   }
 }
