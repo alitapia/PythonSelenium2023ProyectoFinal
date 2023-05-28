@@ -1,10 +1,13 @@
 from src.page_objects.home_page import HomePage
 
 
+
 def test_search(web_drivers):
+    expected_value = "Samsung Galaxy Tab 10.1"
     home_page = HomePage(*web_drivers)
     home_page.open()
-    home_page.search("Iphone")
+    home_page.search("galaxy")
+
 
 
 def test_home_page_menus(web_drivers):
