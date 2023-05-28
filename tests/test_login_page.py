@@ -1,4 +1,5 @@
 from src.page_objects.account_page import AccountPage
+from src.page_objects.forgot_password_page import ForgotPasswordPage
 from src.page_objects.login_page import LoginPage
 
 
@@ -25,3 +26,18 @@ def test_valid_login(web_drivers):
         assert menu_name in actual_right_menus, f"Right menu should include {menu_name}"
     account_page.click_right_menu("Edit Account")
     assert True
+
+
+def test_login_invalid_forgotten_pass(web_drivers):
+    expected_title = "Forgot Your Password?"
+    expected_msg = "Warning: The E-Mail Address was not found in our records, please try again!"
+    login_page = LoginPage(*web_drivers)
+    login_page.open()
+    login_page.forgotten_password()
+    forgot_password_page = ForgotPasswordPage(*web_drivers)
+    actual_title = forgot_password_page.get_title()
+    assert expected_title == actual_title, f"Page title after login should be {expected_title}"
+    forgot_password_page.recover_password("alina@test.com")
+    actual_msg = forgot_password_page.get_warning_message()
+    assert expected_msg == actual_msg, f"Warning message should be {expected_msg}"
+
