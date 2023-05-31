@@ -11,7 +11,7 @@ def test_search(web_drivers):
 
 
 def test_home_page_menus(web_drivers):
-    expected_top_menu_options = ["My Account", "Wish List (0)", "Shopping Cart", "Checkout"]
+    expected_top_menu_options = ["123456789", "My Account", "Wish List (0)", "Shopping Cart", "Checkout"]
     home_page = HomePage(*web_drivers)
     home_page.open()
     actual_top_menu_options = home_page.get_top_menu_options()

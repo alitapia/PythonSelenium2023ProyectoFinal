@@ -1,5 +1,12 @@
 [
+  "test_checkout_page.py::test_no_product_validation",
+  "test_checkout_page.py::test_product_validation",
+  "test_home_page.py::test_home_page_menus",
   "test_home_page.py::test_search",
   "test_login_page.py::test_invalid_login",
-  "test_login_page.py::test_valid_login"
+  "test_login_page.py::test_login_invalid_forgotten_pass",
+  "test_login_page.py::test_valid_login",
+  "test_product_page.py::test_get_product_price",
+  "test_register_page.py::test_success_register",
+  "test_search_page.py::test_search"
 ]

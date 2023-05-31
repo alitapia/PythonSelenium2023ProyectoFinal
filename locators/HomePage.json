@@ -11,11 +11,7 @@
     },
     "top_menu_options": {
       "by": "XPATH",
-      "value": "//ul[@class='list-inline']//a"
-    },
-    "top_menu_options": {
-      "by": "XPATH",
-      "value": "//ul[@class='list-inline']//a"
+      "value": "//ul[@class='list-inline']//span"
     }
   }
 }
